@@ -173,3 +173,26 @@ header.masthead .bg-circle-4 {
 .loser {
   color: red;
 }
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+}
+.display-4 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
