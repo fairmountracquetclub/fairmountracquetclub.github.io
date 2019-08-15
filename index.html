@@ -2,14 +2,21 @@
 <html lang="en">
 
 <head>
-
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69656923-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-69656923-2');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Fairmount Racquet League">
+  <meta name="description" content="Fairmount Racquet Club">
   <meta name="author" content="The Black Taxi Boys">
 
-  <title>Fairmount Racquet League</title>
-
+  <title>Fairmount Racquet Club</title>
+  <link href="/YOUR_PATH/favicon.ico" rel="icon" type="image/x-icon" />
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -27,7 +34,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Fairmount Racquet League</a>
+      <a class="navbar-brand" href="#">Fairmount Racquet Club</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -47,21 +54,102 @@
   <header class="masthead text-center text-white">
     <div class="masthead-content">
       <div class="container">
-        <h1 class="masthead-heading mb-0">Fairmount Racquet League</h1>
+        <h1 class="masthead-heading mb-0">Fairmount Racquet Club</h1>
         <h2 class="masthead-subheading mb-0">The Black Taxi Boys</h2>
         <a href="#schedule" class="btn btn-primary btn-xl rounded-pill mt-5">Schedule</a>
       </div>
     </div>
   </header>
+  <div class="container">
+    <div align="center" id="standings">
+      <h2>Standings</h2>
+      <table class="table table-hover  table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Player</th>
+            <th scope="col">Record</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Colin Kelly</td>
+            <td>1-0</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Dustin Ganz</td>
+            <td>1-0</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Bill Zangardi</td>
+            <td>1-0</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Kyle Mauger</td>
+            <td>0-1</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Tyler Zipay</td>
+            <td>0-1</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Paul Gregori</td>
+            <td>0-1</td>
+          </tr>
+          <tr>
+            <th scope="row">-</th>
+            <td>Tyler Wilson</td>
+            <td>0-0</td>
+          </tr>
+          <tr>
+            <th scope="row">-</th>
+            <td>DJ O'Connor</td>
+            <td>0-0</td>
+          </tr>
+          <tr>
+            <th scope="row">-</th>
+            <td>Zac Yelson</td>
+            <td>0-0</td>
+          </tr>
+          <tr>
+            <th scope="row">-</th>
+            <td>Zach Korjeski</td>
+            <td>0-0</td>
+          </tr>
+          <tr>
+            <th scope="row">-</th>
+            <td>Colin Lindsley</td>
+            <td>0-0</td>
+          </tr>
+          <tr>
+            <th scope="row">-</th>
+            <td>Pat Bondiskey</td>
+            <td>0-0</td>
+          </tr>
+          <tr>
+            <th scope="row">-</th>
+            <td>Mike Pastore</td>
+            <td>0-0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
   <div class="container">
     <div align="center" id="schedule">
       <h2>Schedule</h2>
       <h4>Week 1 - August 13</h4>
-      <h6>Kyle Mauger vs. Colin Kelly</h6>
-      <h6>Tyler Zipay vs. Dustin Ganz</h6>
-      <h6>Paul Gregori vs. Bill Zangardi</h6>
-      <h6>Pat Bondiskey vs. Mike Pastore</h6>
+      <h6><span class="loser">Kyle Mauger</span> vs. <span class="winner">Colin Kelly</span></h6>
+      <h6><span class="loser">Tyler Zipay</span> vs. <span class="winner">Dustin Ganz</span></h6>
+      <h6><span class="loser">Paul Gregori</span> vs. <span class="winner">Bill Zangardi</span></h6>
+      <h6>Pat Bondiskey vs. Mike Pastore (RESCHEDULED)</h6>
       <h5>Byes</h5>
       <h6>Tyler Wilson, DJ O'Connor, Zac Yelson, Zach Korjeski, Colin Lindsley</h6>
       <h4>Week 2 - August 20</h4>
@@ -122,7 +210,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-black">
     <div class="container">
-      <p class="m-0 text-center text-white small">Copyright &copy; Fairmount Racquet League 2019</p>
+      <p class="m-0 text-center text-white small">Copyright &copy; Fairmount Racquet Club 2019</p>
     </div>
     <!-- /.container -->
   </footer>
