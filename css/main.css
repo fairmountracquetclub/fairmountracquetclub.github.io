@@ -174,12 +174,6 @@ header.masthead .bg-circle-4 {
   color: red;
 }
 
-.carousel-item {
-  height: 150vh;
-  max-width: 400px;
-  background: no-repeat center center scroll;
-}
-
 .carousel-control-next-icon:after
 {
   content: '>';
