@@ -175,8 +175,8 @@ header.masthead .bg-circle-4 {
 }
 
 .carousel-item {
-  height: 200vh;
-  min-height: 500px;
+  height: 150vh;
+  max-width: 400px;
   background: no-repeat center center scroll;
 }
 
