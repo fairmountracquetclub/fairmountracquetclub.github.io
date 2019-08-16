@@ -193,9 +193,5 @@ header.masthead .bg-circle-4 {
 }
 
 .logo {
-  max-width: 250px;
-}
-
-.carousel-item {
-  max-height: 750px;
+  max-width: 200px;
 }
