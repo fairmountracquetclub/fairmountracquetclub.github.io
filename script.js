@@ -2,13 +2,13 @@
 var request = new XMLHttpRequest()
 
 // Open a new connection, using the GET request on the URL endpoint
-request.open('GET', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTOlhdC0v8wanyexE4oifdku2PIRWaUtwAmfvye11A-NKy8NnL7xLR1Qbqew0Ev8ZUu8FFqHk_HDJcj/pub?output=csv', true)
-
-request.setRequestHeader("Access-Control-Allow-Origin", "*")
+request.open('GET', 'https://spreadsheets.google.com/feeds/cells/1_47RLiCIouIzly7XxcIdGZrXrErsA2pzn_mlK1_sKpc/1/public/full?alt=json', true)
 
 request.onload = function () {
-  var data = this.response
-  console.log(data)
+	var json = JSON.parse(this.response);
+	for (i = 0; i < json.feed.entry.length; i++) {
+		console.log(json.feed.entry[i].gs$cell.$t)
+	}
 }
 
 // Send request
