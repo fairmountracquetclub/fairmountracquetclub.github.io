@@ -36,6 +36,22 @@
 		<!-- Custom styles for this template -->
 		<link href="css/main.css" rel="stylesheet">
 		<!-- <script src="script.js"></script> -->
+		<script>
+			var standingsRedirect = false;
+			function onStandingsFrameLoad() {
+				if(!standingsRedirect) {
+					document.getElementById("standingsiFrame").src ="https://www.zortssports.com/standing/index"
+					standingsRedirect = true;
+				}
+			};
+			var scheduleRedirect = false;
+			function onScheduleFrameLoad() {
+				if(!scheduleRedirect) {
+					window.frames["scheduleiFrame"].location.href = "https://www.zortssports.com/calendar/index"
+					scheduleRedirect = true;
+				}
+			};
+		</script>
 	</head>
 	
 	<body>
@@ -79,7 +95,10 @@
 				<a href="#standings2019" class="nav-link" data-toggle="tab">2019 Standings</a>
 			</li>
 			<li class="nav-item">
-				<a href="#standings2020" class="nav-link active" data-toggle="tab">2020 Standings</a>
+				<a href="#standings2020" class="nav-link" data-toggle="tab">2020 Standings</a>
+			</li>
+			<li class="nav-item">
+				<a href="#standings2021" class="nav-link active" data-toggle="tab">2021 Standings</a>
 			</li>
 		</ul>
 		<div class="tab-content">
@@ -161,7 +180,7 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="tab-pane fade show active" id="standings2020" align="center">
+			<div class="tab-pane fade show" id="standings2020" align="center">
 				<table class="table table-hover  table-dark">
 					<thead>
 						<tr>
@@ -173,7 +192,7 @@
 					<tbody>
 						<tr>
 							<th scope="row">1</th>
-							<td>Dustin Ganz</td>
+							<td>Dustin Ganz - LEAGUE CHAMPION</td>
 							<td>11-0</td>
 						</tr>
 						<tr>
@@ -234,13 +253,19 @@
 					</tbody>
 				</table>
 			</div>
+			<div class="tab-pane fade show active" id="standings2021" align="center">
+				<iframe id="standingsiFrame" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation-by-user-activation" src="https://www.zortssports.com/league/app/3390?plain=true" width="100%" height="500" onload="onStandingsFrameLoad(this)"></iframe>
+			</div>
 		</div>
 		<ul class="nav nav-tabs">
 			<li class="nav-item">
 				<a href="#schedule2019" class="nav-link" data-toggle="tab">2019 Schedule</a>
 			</li>
 			<li class="nav-item">
-				<a href="#schedule2020" class="nav-link active" data-toggle="tab">2020 Schedule</a>
+				<a href="#schedule2020" class="nav-link" data-toggle="tab">2020 Schedule</a>
+			</li>
+			<li class="nav-item">
+				<a href="#schedule2021" class="nav-link active" data-toggle="tab">2021 Schedule</a>
 			</li>
 		</ul>
 		<div class="tab-content">
@@ -306,7 +331,7 @@
 				<h3>PLAYOFFS</h3>
 				<h4>TBD</h4>
 			</div>
-			<div class="tab-pane fade show active" id="schedule2020" align="center">
+			<div class="tab-pane fade show" id="schedule2020" align="center">
 				<h4>Week 1 - June 23</h4>
 				<h6><span class="loser">Pat Shank [FORFEIT]</span> vs. <span class="winner">Colin Lindsley</span> - 6:30pm Court 1</h6>
 				<h6><span class="winner">Colin Kelly</span> vs. <span class="loser">Pat Bondiskey</span> - 6:30pm Court 2</h6>
@@ -385,6 +410,11 @@
 				<h6><span class="winner">Dustin Ganz</span> vs. <span class="loser">Tyler Wilson</span> - 7:00pm Court 2</h6>
 				<h6>Pauly Gregori vs. DJ O'Connor - 7:00pm Court 3</h6>
 			</div>
+			<div class="tab-pane fade show active" id="schedule2021" align="center">
+				<iframe name="scheduleiFrame" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://www.zortssports.com/league/app/3390?plain=true" width="100%" height="500" onload="onScheduleFrameLoad(this)">
+					
+				</iframe>
+			</div>
 		</div>
 		<div class="row" id="photos">
 			<div class="col-md-4">
@@ -411,77 +441,78 @@
 				<div class="thumbnail">
 					<a href="pictureday/TKL-49.jpg">
 						<img src="pictureday/TKL-49.jpg" alt="Nature" style="width:100%">
-						<div class="caption">
-							<p>Colin Kelly</p>
-						</div>
+					<div class="caption">
+					<p>Colin Kelly</p>
+					</div>
 					</a>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="thumbnail">
+					</div>
+					</div>
+					<div class="col-md-4">
+					<div class="thumbnail">
 					<a href="pictureday/TKL-70.jpg">
-						<img src="pictureday/TKL-70.jpg" alt="Fjords" style="width:100%">
-						<div class="caption">
-							<p>Pat Shank</p>
-						</div>
+					<img src="pictureday/TKL-70.jpg" alt="Fjords" style="width:100%">
+					<div class="caption">
+					<p>Pat Shank</p>
+					</div>
 					</a>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="thumbnail">
+					</div>
+					</div>
+					<div class="col-md-4">
+					<div class="thumbnail">
 					<a href="pictureday/TKL-102.jpg">
-						<img src="pictureday/TKL-102.jpg" alt="Fjords" style="width:100%">
-						<div class="caption">
-							<p>Dustin Ganz</p>
-						</div>
+					<img src="pictureday/TKL-102.jpg" alt="Fjords" style="width:100%">
+					<div class="caption">
+					<p>Dustin Ganz</p>
+					</div>
 					</a>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="thumbnail">
+					</div>
+					</div>
+					<div class="col-md-4">
+					<div class="thumbnail">
 					<a href="pictureday/TKL-125.jpg">
-						<img src="pictureday/TKL-125.jpg" alt="Fjords" style="width:100%">
-						<div class="caption">
-							<p>DJ O'Connor</p>
-						</div>
+					<img src="pictureday/TKL-125.jpg" alt="Fjords" style="width:100%">
+					<div class="caption">
+					<p>DJ O'Connor</p>
+					</div>
 					</a>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="thumbnail">
+					</div>
+					</div>
+					<div class="col-md-4">
+					<div class="thumbnail">
 					<a href="pictureday/TKL-131.jpg">
-						<img src="pictureday/TKL-131.jpg" alt="Fjords" style="width:100%">
-						<div class="caption">
-							<p>Commissioner: Pauly Gregori</p>
-						</div>
+					<img src="pictureday/TKL-131.jpg" alt="Fjords" style="width:100%">
+					<div class="caption">
+					<p>Commissioner: Pauly Gregori</p>
+					</div>
 					</a>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="thumbnail">
+					</div>
+					</div>
+					<div class="col-md-4">
+					<div class="thumbnail">
 					<a href="pictureday/TKL-143.jpg">
-						<img src="pictureday/TKL-143.jpg" alt="Fjords" style="width:100%">
-						<div class="caption">
-							<p></p>
-						</div>
+					<img src="pictureday/TKL-143.jpg" alt="Fjords" style="width:100%">
+					<div class="caption">
+					<p></p>
+					</div>
 					</a>
-				</div>
-			</div>
-		</div>
-		<!-- Footer -->
-		<footer class="py-5 bg-black">
-			<div class="container">
-				<p class="m-0 text-center text-white small">Copyright &copy; Fairmount Racquet Club 2020</p>
-			</div>
-			<div class="container">
-				<p class="m-0 text-center text-white small"><a href="https://twitter.com/FairmountRC?s=17"><i class="fa fa-twitter" style="font-size:48px;color:white"></i></a></p>
-			</div>
-			<!-- /.container -->
-		</footer>
-		
-		<!-- Bootstrap core JavaScript -->
-		<script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	</body>
-	
-</html>
+					</div>
+					</div>
+					</div>
+					<!-- Footer -->
+					<footer class="py-5 bg-black">
+					<div class="container">
+					<p class="m-0 text-center text-white small">Copyright &copy; Fairmount Racquet Club 2020</p>
+					</div>
+					<div class="container">
+					<p class="m-0 text-center text-white small"><a href="https://twitter.com/FairmountRC?s=17"><i class="fa fa-twitter" style="font-size:48px;color:white"></i></a></p>
+					</div>
+					<!-- /.container -->
+					</footer>
+					
+					<!-- Bootstrap core JavaScript -->
+					<script src="vendor/jquery/jquery.min.js"></script>
+					<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+					</body>
+					
+					</html>
+										
